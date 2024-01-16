@@ -1,0 +1,35 @@
+1. Algoritmo PromediosCualitativos
+2.	Inicio
+3.	Funcion principal()	
+4.		Definicion
+			para1, para2, para3, para4, prom Como Real [0.0,n]
+			cualit="" Como Cadena [A-Z, ,a-z]
+5.		<< "Ingrese la nota del parametro 1: "
+6.		>> para1
+7.		<< "Ingrese la nota del parametro 2: "
+8.		>> para2
+9.		<< "Ingrese la nota del parametro 3: "
+10.		>> para3
+11.		<< "Ingrese la nota del parametro 4: "
+12.		>> para4
+13.		<< "El promedio cualitativo es: ", califiCuali(para1,para2,para3,para4)
+14.	Fin funcion principal
+15.FinAlgoritmo
+
+1. Funcion califiCuali(para1 i(0,n),para2 i(0,n),para3 i(0,n),para4 i(0,n),cualit x(a-z, ,A-Z)):x
+2.	prom= (para1 + para2 + para3 + para4)/4
+3.	Si(prom <= 5)
+4.		cualit = "Regular"
+5.	SiNo
+6.		Si(prom <= 8)
+7.			cualit = "Bueno"
+8.		SiNo
+9.			Si(prom <= 9)
+10.				cualit = "Muy bueno"
+11.			SiNo
+12.				cualit = "Sobresaliente"
+13.			FinSi
+14.		FinSi
+15.	FinSi
+16.	Devolver cualit
+17.FinFUncion
